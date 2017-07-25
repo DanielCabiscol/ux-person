@@ -1,6 +1,7 @@
 <link rel="import" href="../polymer/polymer-element.html">
 <link rel="import" href="/bower_components/paper-item/paper-icon-item.html">
-<link rel="import" href="/bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="/bower_components/iron-icons/social-icons.html">
+<link rel="import" href="/bower_components/paper-item/paper-item-body.html">
 
 <dom-module id="ux-person">
   <template>
@@ -11,7 +12,7 @@
 </style>
 
     <paper-icon-item>
-      <iron-icon icon="communication:phone" slot="item-icon">
+      <iron-icon icon="social:person" slot="item-icon">
       </iron-icon>
       <paper-item-body two-line>
         <div>Daniel Sánchez</div>
@@ -20,7 +21,8 @@
     </paper-icon-item>
 
     <paper-icon-item>
-      <div class="avatar blue" slot="item-icon"></div>
+      <iron-icon icon="social:cake" slot="item-icon">
+      </iron-icon>
       <paper-item-body two-line>
         <div>21 de Març de 1991</div>
         <div secondary>Data de Naixement</div>
