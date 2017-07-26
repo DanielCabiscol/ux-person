@@ -15,7 +15,7 @@
       <iron-icon icon="social:person" slot="item-icon">
       </iron-icon>
       <paper-item-body two-line>
-        <div>Daniel Sánchez</div>
+        <div>[[person.name]] [[person.first-surname]] [[person.second-surname]]</div>
         <div secondary>Nom i Cognoms</div>
       </paper-item-body>
     </paper-icon-item>
@@ -24,7 +24,7 @@
       <iron-icon icon="social:cake" slot="item-icon">
       </iron-icon>
       <paper-item-body two-line>
-        <div>21 de Març de 1991</div>
+        <div>[[person.birthDate]]</div>
         <div secondary>Data de Naixement</div>
       </paper-item-body>
     </paper-icon-item>
@@ -47,6 +47,10 @@
           prop1: {
             type: String,
             value: 'ux-person'
+          },
+
+          person: {
+            type: Object
           }
         };
       }
